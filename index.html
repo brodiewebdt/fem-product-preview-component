@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEMPLATE</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Product preview card component</title>
     <!-- Reset CSS -->
     <link rel="stylesheet" href="css/josh-comeau-reset.css" />
     <!-- Google Fonts -->
@@ -13,6 +15,34 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <main>
+      <div class="card product-card">
+        <div class="product-card__image">
+          <picture class="product-image">
+            <source srcset="assets/images/image-product-desktop.jpg" media="(min-width: 600px)" />
+            <img src="assets/images/image-product-mobile.jpg" alt="Gabrielle Essense perfume bottle laying on a table with branches and leaves" />
+          </picture>
+        </div>
+        <!-- /.product-card__image -->
+        <div class="product-card__text">
+          <p class="product-card__category">Perfume</p>
+          <h2 class="product-card__title">Gabrielle Essence Eau De Parfum</h2>
+          <p class="product-card__description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+          <div class="product-card__prices">
+            <p class="product__sale-price"><span class="visually-hidden">Sale price:</span>$149.99</p>
+            <p class="product__original-price"><span class="visually-hidden">Original price:</span>$169.99</p>
+          </div>
+          <!-- /.product-card__prices -->
+          <button type="button" class="btn product-card__btn" aria-labelledby="Add to cart - Gabrielle Essence Eau De Parfum">
+            <img src="assets/images/icon-cart.svg" alt="" />
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <!-- /.product-card__text -->
+      </div>
+      <!-- /.card product-card -->
+    </main>
+    <footer class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</footer>
     <script src="js/script.js"></script>
   </body>
 </html>
