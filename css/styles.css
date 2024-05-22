@@ -140,14 +140,22 @@ p {
   font-size: var(--fs-14);
   font-weight: var(--fw-700);
   padding-block: var(--spacing);
-  /* padding-inline: calc(1.5 * var(--spacing)); */
   width: 100%;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn:focus-visible {
+  background-color: var(--color-primary-dark);
+  outline: 2px solid hsl(338, 65%, 42%);
+  outline-offset: 4px;
 }
 
 /********* Attribution Styles *********/
 .attribution {
   font-size: 11px;
-  /* margin-block-start: calc(-11 * var(--spacing)); */
   text-align: center;
 }
 .attribution a {
